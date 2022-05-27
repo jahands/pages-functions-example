@@ -1,5 +1,5 @@
 // Reacts to POST /hello-world
-export function onRequestGet(request) {
+export async function onRequest(request) {
   // ...
   return new Response(`Hello world from functions!`);
 }
