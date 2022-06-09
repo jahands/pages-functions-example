@@ -1,0 +1,45 @@
+{
+    "routes": [
+      {
+        "routePath": "/foo/baz/xyz",
+        "mountPath": "/foo/baz",
+        "method": "",
+        "module": [
+          "foo/baz/xyz.ts:onRequest"
+        ]
+      },
+      {
+        "routePath": "/foo/:bar",
+        "mountPath": "/foo",
+        "method": "",
+        "module": [
+          "foo/[bar].ts:onRequest"
+        ]
+      },
+      {
+        "routePath": "/hello",
+        "mountPath": "/",
+        "method": "",
+        "module": [
+          "hello.ts:onRequest"
+        ]
+      },
+      {
+        "routePath": "/:zed",
+        "mountPath": "/",
+        "method": "",
+        "module": [
+          "[zed].ts:onRequest"
+        ]
+      },
+      {
+        "routePath": "/:baz*",
+        "mountPath": "/",
+        "method": "",
+        "module": [
+          "[[baz]].ts:onRequest"
+        ]
+      }
+    ],
+    "baseURL": "/"
+  }
